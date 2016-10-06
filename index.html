@@ -1,24 +1,19 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
+<section class="hero">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="hero-inner container">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <h1>Hello!..</h1>
+    <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+    <h3>{{ site.author.bio }}</h3>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-ghost">about</a>
+    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-ghost">blog</a>
 
-</div>
+  </div>
 
+</section>
