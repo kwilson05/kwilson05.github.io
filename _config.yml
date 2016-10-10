@@ -13,11 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Kasozi Wilson
 email: soziandwelewilson@gmail.com
-description: Kasozi Andwele Wilson's Blog
-tagline: "Commitment Compentence Confidence
-                 -Alfred Wilson"
 baseurl: ""
 url: "http://kasoziwilson.com" # the base hostname & protocol for your site
 twitter_username: KasoziWilson
@@ -27,6 +25,12 @@ destination: _site
 sass:
   sass_dir: _scss
   style: compressed # expanded
+
+author:
+  name: "Kasozi Wilson"
+  job: "Software developer"
+  bio: "I'm a forever learner who luckily chose a career where innovation is not scarce"
+  thumb: "Kasozi_Tri_2015.jpg"
 
 # Build settings
 markdown: kramdown
