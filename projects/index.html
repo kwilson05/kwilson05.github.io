@@ -1,0 +1,15 @@
+---
+layout: home
+---
+
+<section>
+<ol>
+  {% for development in site.developments %}
+    <li>
+     <h1> <a href="{{development.url }}">{{ development.title }}</a></h1>
+      {{ development.excerpt }}
+      <div><a href="{{ development.url }}">Read more here</a></div> <!--Add some text to let the user know this isn't the full development-->
+    </li>
+  {% endfor %}
+</ol>
+</section>

@@ -1,0 +1,51 @@
+Personal web site
+
+Content:
+
+      Landing/Home page:
+        Picture of myself
+        brief about me section;
+        two buttons to the blog and project page
+        github link
+        stackoverflow link
+
+
+      Blog:
+        List each post title with a preview of the post
+          - The title will be link to the actual post
+          change the layout for the post page;
+
+
+
+        Blog questions:
+          Do i want show the titles on the homepage?
+          If i show the titles do I want to show a preview of the content?
+          Maybe show only your three most recent posts?
+          Future- Figure out a way to show the most popular 2/3 and the most recent.....
+          For now, I want to list each post with it's title in preview?
+
+      Projects:
+        List of each project title
+          give detail enough description
+          link to source
+          if possible, link to live application
+
+      Footer:
+        Home Page: N/A
+
+        Project:
+            Nav links to every page
+            twitter?
+            stackoverflow link
+            list all project's
+              - quick description
+              - link to project source
+            Do I want to section projects by current and archived projects? Maybe wait until I have more projects to show off lol
+
+        Blog:
+          Nav links to every page
+          Github link
+          twitter?
+          stackoverflow link
+
+

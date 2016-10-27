@@ -1,0 +1,10 @@
+---
+layout: home
+title:  "Introduction"
+date:   2016-10-01 02:17:15 -0500
+categories: blog
+---
+
+
+Hi, There let's try this new post out Sozi.
+
