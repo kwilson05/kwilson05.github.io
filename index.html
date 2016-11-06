@@ -1,21 +1,28 @@
 ---
 layout: home
 ---
+<div class="home">
+ <div class="about-me">
 
-<section class="about-me">
-
-  <div class="about-me-inner">
     <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="img">
-    <h3>Hi! I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
-    <h4>{{ site.author.bio }}</h4>
 
-    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn">blog</a>
-    <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn">projects</a>
-    <br>
-    {% include icon-github.html %}
-    {% include icon-stackoverflow.html %}
+        <p class="bio"><h3>Hi! I'm <strong itemprop="name">{{ site.author.name }}</strong>
+            , a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3></p>
 
-  </div>
-  {% include footer-home.html %}
+    </div>
 
-</section>
+    <div class="home-buttons">
+        <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn">blog</a>
+        <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn">projects</a> {% include icon-github.html %}
+        {% include icon-stackoverflow.html %}
+
+
+
+    </div>
+
+</div>
+
+
+
+
+

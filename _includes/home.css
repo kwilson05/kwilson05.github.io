@@ -1,0 +1,48 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 20px;
+}
+
+
+.img{
+  width: 600px;
+  border-radius: 50%;
+
+
+}
+
+.home-buttons{
+  border: 2px solid black;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me{
+  border: 2px solid black;
+  width: 700px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+p{
+text-align: center;
+}
+
+
+
