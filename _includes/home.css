@@ -15,23 +15,45 @@
 
 }
 
-.home-buttons{
-  border: 2px solid black;
-  width: 250px;
+.nav-buttons{
+  /*border: 2px solid black;*/
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 150px;
 }
 
+.meta-svgs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100px;
+}
+.btn{
+  font: 20px Roboto condensed;
+  text-decoration: none;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+
+}
 footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .about-me{
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   width: 700px;
   height: 550px;
   display: flex;
@@ -39,6 +61,7 @@ footer{
   align-items: center;
 
 }
+
 
 p{
 text-align: center;
