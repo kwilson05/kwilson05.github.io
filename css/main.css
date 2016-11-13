@@ -5,5 +5,32 @@
 
 {% include reset.css %}
 {% include home.css %}
+{% include blog.css %}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.dates{
+font-size: 20px;
+}
+
+p{
+  font-size: 18px;
+  text-align: left;
+  clear: both;
+  margin-bottom: 50px;
+  /*border: 1px solid black;*/
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+a{
+  text-decoration: none;
+}
 
 

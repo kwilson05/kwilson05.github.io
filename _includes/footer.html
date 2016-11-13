@@ -3,7 +3,7 @@
 
     {% if page.url == '/projects/' %}
 
-    <a href="{{"/blog" | prepend:site.dev_url}}">Porject</a>
+    <a href="{{"/blog" | prepend:site.dev_u orl}}">Blog</a>
 
     {% elsif page.url == '/blog/' %}
 
@@ -11,8 +11,8 @@
 
     {% else %}
 
-    <a href="{{"/projects" | prepend: site.dev_url}}">Projects</a>
-    <a href="{{ "/blog" | prepend:site.dev_url}}">Blog</a>
+    <a class="links" href="{{"/projects" | prepend: site.dev_url}}">Projects</a>
+    <a class="links" href="{{ "/blog" | prepend:site.dev_url}}">Blog</a>
     <span>{{page.url}}</span>
 
     {% endif %}

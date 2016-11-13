@@ -1,16 +1,21 @@
 ---
-layout: home
+layout: blog
+
 ---
 
 <section>
+<h1 class="page-heading">Writings</h1>
 <ol>
   {% for post in site.posts %}
     <li>
-     <h1> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <article>
+    <div class="dates"> {{post.date | date: '%B %d, %Y'}} </div>
+     <h2 class="post-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
       {{ post.excerpt }}
-      <a href="{{ post.url }}">Read full post here</a> <!--Add some text to let the user know this isn't the full post-->
+      <nav class="nav-container"> <a class="nav-to-post" href="{{ post.url }}">Read further</a></nav> <!--Add some text to let the user know this isn't the full post-->
+      </article>
+      <hr>
     </li>
   {% endfor %}
 </ol>
-{% include footer.html %}
 </section>
