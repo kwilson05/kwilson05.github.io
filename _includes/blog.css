@@ -1,16 +1,17 @@
-
-.links{
-  font-family: 'Open Sans';
+.links {
+    font-family: 'Open Sans';
 }
 
-
-section, ol, li{
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  width: 100%;
-  /*border: 1px solid black;*/
+section,
+ol,
+li,
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    /*border: 1px solid black;*/
 }
 
 hr {
@@ -21,52 +22,79 @@ hr {
     margin-bottom: 50px;
     display: block;
     clear: both;
-
 }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-h1.page-heading{
-  text-decoration: underline;
-
+h1.page-heading {
+    text-decoration: underline;
+    margin-top: 10px;
 }
 
-.post-title{
-  text-decoration: none;
-  text-align: left;
-}
 
 .nav-container{
-  text-align: left;
-}
-.nav-to-post{
-  font-size: 18px;
-  border: 1px solid black;
-  border-radius: 10%;
-  text-align: left;
-  margin-top: 500px;
 
+  width: inherit;;
 }
-
-a.nav-to-post:hover{
-background-color:  orange;
+.nav-to-post {
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.dates{
-  text-align: left;
+a.nav-to-post:hover {
+    background-color: orange;
 }
 
 
-
-article{
-  text-align: center;
-  width: 50%;
-  padding-top: 20px;
-  /*border: 1px solid black;*/
-  height: 50%
+article p,
+article h1,
+article time,
+.post-title,
+.nav-container {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1280px){
+article p,
+  article h1,
+  article time,
+  .post-title,
+  .nav-container{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  article p,
+  article h1,
+  article time,
+  .post-title,
+  .nav-container{
+    width: 100%;
+  }
+}
+.post-title {
+    text-decoration: none;
+    text-align: left;
+}
+
+time {
+    text-align: left;
+}
+
+.nav-container {
+    text-align: left;
+}

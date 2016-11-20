@@ -9,10 +9,10 @@ layout: blog
   {% for post in site.posts %}
     <li>
     <article>
-    <div class="dates"> {{post.date | date: '%B %d, %Y'}} </div>
+    <time> {{post.date | date: '%B %d, %Y'}} </time>
      <h2 class="post-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
       {{ post.excerpt }}
-      <nav class="nav-container"> <a class="nav-to-post" href="{{ post.url }}">Read further</a></nav> <!--Add some text to let the user know this isn't the full post-->
+      <nav class="nav-container"> <a class="nav-to-post" href="{{ post.url }}">Read Further</a></nav> <!--Add some text to let the user know this isn't the full post-->
       </article>
       <hr>
     </li>
