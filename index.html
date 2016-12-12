@@ -1,28 +1,29 @@
 ---
 layout: home
 ---
-<div class="home">
+<section class="homepage-container">
  <div class="about-me">
 
-    <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="img">
+    <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="home-img">
 
         <p class="bio"><h3>Hi! I'm <strong itemprop="name">{{ site.author.name }}</strong>
             , a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3></p>
 
     </div>
 
-    <div class="nav-buttons">
+    <nav class="homepage-buttons-container">
         <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn">Blog</a>
         <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn">Projects
         </a>
-    </div>
-    <div class="meta-svgs">
+    </nav>
+
+    <div class="homepage-svgs-buttons-container">
         {% include icon-github.html %}
         {% include icon-stackoverflow.html %}
     </div>
 
 
-</div>
+</section>
 
 
 

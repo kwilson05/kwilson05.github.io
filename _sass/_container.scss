@@ -1,0 +1,160 @@
+
+ .container{
+    display: flex;
+    align-items: center;
+ }
+
+.content{
+  @extend .container;
+  flex-direction: column
+   padding-top: 20px;
+    width: 100%;
+}
+
+/*Home page*/
+.homepage-main {
+    @extend .container;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.homepage-buttons {
+    @extend .homepage-main ;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.homepage-svg-buttons {
+    @extend .homepage-buttons;
+    justify-content: space-around;
+    width: 100px;
+}
+
+
+
+
+
+/*wrappers*/
+.nav-wrapper{
+  /*maybe move this code to a function*/
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 8px;
+
+}
+
+
+/*create functions for media queries
+Look at Oliver's code for help*/
+@media screen and (max-width: 1000px){
+
+  .nav-container{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .nav-container{
+    width: 95%;
+  }
+}
+
+
+
+
+/*Remove from _container.scss*/
+
+
+article p,
+article h1,
+article time,
+.post-title,
+.nav-container {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1000px){
+article p,
+  article h1,
+  article time,
+  .post-title,
+  .nav-container{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  article p,
+  article h1,
+  article time,
+  .post-title,
+  .nav-container{
+    width: 95%;
+  }
+}
+.post-title {
+    text-decoration: none;
+    text-align: left;
+}
+
+time {
+    text-align: left;
+}
+
+.nav-container {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.homepage-bio {
+    text-align: center;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1.page-heading {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+
+a.nav-to-post:hover {
+    background-color: orange;
+}
+
+
+.links {
+    font-family: 'Open Sans';
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #f0f0f0;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: block;
+    clear: both;
+}
+
+

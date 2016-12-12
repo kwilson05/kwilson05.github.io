@@ -1,10 +1,3 @@
-.home{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-}
 
 
 .img{
@@ -12,16 +5,6 @@
   border-radius: 50%;
 
 
-}
-
-.nav-buttons{
-  /*border: 2px solid black;*/
-  display: flex;1
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 150px;
 }
 
 .meta-svgs{
@@ -32,16 +15,15 @@
   flex-wrap: wrap;
   width: 100px;
 }
-.btn{
-  font: 20px Roboto condensed;
-  text-decoration: none;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
 
+.nav-buttons{
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 150px;
 }
 footer{
   display: flex;

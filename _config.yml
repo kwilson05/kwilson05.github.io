@@ -8,6 +8,9 @@ github_username:  kwilson05
 
 destination: _site
 
+sass:
+  sass_dir: _sass
+
 author:
   name: "Kasozi A. Wilson"
   job: "Software developer"

@@ -1,20 +1,9 @@
 ---
-layout: home
+layout: posts
 title:  "Allow me to reintroduce myself!"
 date:   2016-09-15 02:17:15 -0500
 categories: blog
 ---
 
-Check out the site.github_username [jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at
- If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
- We must sepakalsjdklfjlkasdkfjasd
- asdfjaklsjdfkljaklsdjfkljaklsdjfkljaksdf
-  aksdjfkljalksdkf akjdsfkl jaklsdjfk jaksdjfk  kklajskdlfjklasjdklfjklajsdklfjaklsjdklfjakljdsklfjklajsdklfjklajdsklfjaklsdjfkljakljlskdfjklajdklfjkajdlksfjlkajdflkjakldjfklajsdlkfjalksjdlaljdflkjaksdf hgaks
-  [dpofiaklhdklgj90h uioa ;sdklfklajsdkfjahe  sherlofasdg my name i s kasozi why are you lugasdf ast me asdfjhf;lasdlkfjalk;djf a;sdjgflkahjdfsklgjasdlfjlahdsfajshdfjkhaksdhfjkahjksdhfjkhajkhdjkfhjahjkdshfjkhajkdhfjkahjkdhfjkahdkjfhjkahdjkfhajkhdjkfhajkhdfjkhajkdhfjkhajkdhjkhajksdfjkadjkfhjaksdhfjkahjkdshfjkahdjkfhjkahdfjkhajkdhfjkhajkdhfjkahdjkfhjkahsdfjkhsadj]
-  asdfasdffsadfadsfa
-  asdfadsfasdfasdfadfasdf
-  asdfadfadfadfdfdjhfjdhfkahdhfha]sdfh
-  asdfhakjhjkhfjkh[kjshdjhta
-  asdhfjahsd]
 
-
+Consider what taking a simple photograph meant 25 years ago. You had film cameras, negatives, dark rooms, emulsions, and paper. It would take days to produce a picture you could show to someone. Now consider what taking a photograph means today. With a smartphone that fits in our pocket, we can capture a photo, edit it, view it, and show it to anyone, all in as a little as a few seconds. These fantastic devices are simultaneously capable of capturing high resolution visuals, displaying them, and immediately distributing them to a billion other devices similarly capable of the exact same things. It is now actually perceivable that a photo you take one moment could be seen by over half of the entire human population a moment later.

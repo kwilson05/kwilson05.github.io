@@ -1,0 +1,31 @@
+
+
+.btn{
+  font: 1.2em; //20px;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+
+}
+
+.home-btn{
+
+  @extend .btn;
+  font: Roboto condensed;
+  color: #333333;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+
+}
+
+
+.nav-to-post {
+    font-size: 1.1em;    //18px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
