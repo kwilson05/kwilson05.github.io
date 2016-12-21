@@ -1,32 +1,23 @@
 ---
 layout: home
 ---
-<section class="homepage-container">
- <div class="about-me">
 
-    <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="home-img">
+<section class="main-section flex-column-center" style="border: 5px solid black;">
+    <div class="about-section flex-column-center" style="border: 5px solid black;">
 
-        <p class="bio"><h3>Hi! I'm <strong itemprop="name">{{ site.author.name }}</strong>
-            , a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3></p>
+        <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="medium-size-img half-rounded-img">
 
+        <p class="bio" style = "border: 5px solid black; width:25%;">
+            Hi! I'm {{ site.author.name }}
+            , a {{ site.author.job }}.</p>
     </div>
+    <div class="internal-nav-section flex-row-center flex-space-around-content" style="border: 5px solid black; ">
 
-    <nav class="homepage-buttons-container">
         <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn">Blog</a>
-        <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn">Projects
-        </a>
-    </nav>
+        <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn">Projects</a>
 
-    <div class="homepage-svgs-buttons-container">
-        {% include icon-github.html %}
-        {% include icon-stackoverflow.html %}
     </div>
-
-
+    <div class="external-nav-section flex-row-center flex-space-between-content" style="border: 5px solid black;">
+        {% include icon-github.html %} {% include icon-stackoverflow.html %}
+    </div>
 </section>
-
-
-
-
-
-

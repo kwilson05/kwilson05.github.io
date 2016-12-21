@@ -1,0 +1,35 @@
+
+/*You started from big monitor sozi*/
+
+.main-section {
+  width: 100%;
+}
+
+.about-section {
+ /*large device my big monitor*/
+  @include max-width(80em);
+  margin: 1em .5em 3em .5em;
+
+  p{
+    @include max-width(30%);
+  }
+}
+
+.internal-nav-section {
+  /*large device my big monitor*/
+  @include max-width(9.375em);
+  margin-bottom: .5em;
+
+}
+
+.external-nav-section {
+  /*large device my big monitor*/
+  @include max-width(9.375em);
+  margin-bottom: 1em;
+
+  svg {
+    display: inline;
+    margin: .5em;
+  }
+
+}

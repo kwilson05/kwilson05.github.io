@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     /*automatically fits your padding and margins
@@ -33,3 +31,24 @@ a {
     text-decoration: none;
     color: black;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #f0f0f0;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: block;
+    clear: both;
+}
+
