@@ -1,4 +1,19 @@
-12/21/16
+DONE:
 
+home page sectios and button are done;
 
-Why am I getting warnings if the value is not null in my mixins?
+NOT DONE:
+- Move on to coding the sections in the blog page,  buttons, img,.......
+
+- Why am I getting warning for widths that are not null
+
+- Still need to figure out typography and colors for the page
+
+- think of DRY way to color square button borders
+
+- add text shadow to titles
+    - maybe add a 3D effect to the buttons or title
+
+- Footer
+
+- Calculate read time; Medium has a pretty good article on it

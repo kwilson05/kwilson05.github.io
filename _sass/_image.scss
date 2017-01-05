@@ -8,6 +8,13 @@
   margin-bottom: 10px;*/
 }
 
-.half-rounded-img{
+.img-half-rounded{
   border-radius: 50%;
+  width: 50%;
+
+   @include max-width-limit(large-device){
+  //margin: 10px;
+    width: 40%;
+  }
+
 }

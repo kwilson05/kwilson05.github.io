@@ -1,13 +1,19 @@
 ---
-
 ---
 
-@import "container";
-@import "reset";
-@import "base";
-@import "image";
-@import "buttons";
-@import "variables";
-@import "functions";
-@import "mixins";
-@import "section";
+
+
+@import 'reset'
+, 'variables'
+, 'functions'
+, 'mixins'
+, 'container'
+, 'base'
+, 'image'
+, 'buttons'
+, 'section'
+, 'author-bio'
+, 'page-title'
+, 'post-date'
+, 'post-title'
+, 'post-content';

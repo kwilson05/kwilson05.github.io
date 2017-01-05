@@ -1,31 +1,29 @@
 
 
-.btn{
-  font: 1.2em; //20px;
+%btn {
+  font: 1.25em; //20/16px;
   color: #333333;
+  margin: .3em;
   padding: 2px 6px 2px 6px;
   text-decoration: none;
   text-align: center;
-  border: 1px solid black;
-
 }
 
-.home-btn{
+.btn-square {
+  @extend %btn;
+  /*Think of DRY way to color borders*/
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #6495ed;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #6495ed;
+  --border-width: 3px;
+  --box-shadow: 1px 1px 50px grey;
+}
 
-  @extend .btn;
-  font: Roboto condensed;
-  color: #333333;
+.btn-rounded {
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-
-}
-
-
-.nav-to-post {
-    font-size: 1.1em;    //18px;
-    border-radius: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  border-radius: 30px;
 }

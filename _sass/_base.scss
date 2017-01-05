@@ -1,26 +1,17 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
     /*automatically fits your padding and margins
                         to the content width*/
 }
 
-h1 {
-    font-size:  3.5em;  /* 50px/16px;*/
-}
-
-h2 {
-    font-size: 2em;    /* 50px/16px;*/
-}
-
-time {
-    font-size: 1.2em; /*20px;*/
-    font-style: italic;
+body{
+    font-size: 1em;   //16px
+    line-height: 1.5;
 }
 
 p {
     font-size: 1.1em; //18px;
     text-align: left;
-    clear: both;
     margin-bottom: 50px;
     /*border: 1px solid black;*/
     text-overflow: ellipsis;
@@ -40,14 +31,17 @@ footer {
     margin-bottom: auto;
 }
 
+ol, li{
+    list-style-type: none;
+}
 
 
 hr {
     width: 100%;
     height: 1px;
     background-color: #f0f0f0;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     display: block;
     clear: both;
 }

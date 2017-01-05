@@ -13,14 +13,15 @@
   }
 }
 
-@mixin min-width($min-width-name) {
-  $min-width-value: $min-width-name; //get-min-width-value($min-width-name);
-  @if(min-width-value != null) {
-    @media(min-width: $min-width-value) {
+@mixin max-width-limit($max-width-name) {
+  $max-width-value: get-width-limit-value($max-width-name);
+
+  @if($max-width-value != null) {
+    @media(max-device-width: $max-width-value) {
       @content;
     }
   }
   else {
-    @warn "No value was retrieved from #{$min-width-name}. " + "You can find all the $min-widths key-value pairs in _variables.scss.";
+    //@warn "No value was retrieved from #{$max-width-name}. " + "You can find all the $widths-limit key-value pairs in _variables.scss.";
   }
 }
