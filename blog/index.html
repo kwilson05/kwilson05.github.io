@@ -8,16 +8,15 @@ layout: blog
 <ol>
   {% for post in site.posts %}
     <li>
-    <article class= flex-column-center>
+    <article class= flex-column-center style= "border: 1px solid black">
     <time class= "post-date"> {{post.date | date: '%B %d, %Y'}} </time>
     <h1 class="post-title">
     <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
-    <p class="post-content">  {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-    <nav class="btn-rounded ">
-      <a class="nav-to-post" href="{{ post.url }}">Read Further</a>
+    <p class="post-content">  {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+    <nav class="post-content-nav">
+      <a class="btn-rounded " href="{{ post.url }}">Read Further</a>
       </nav>
-    </p>
       </article>
       <hr>
     </li>

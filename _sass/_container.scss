@@ -20,6 +20,13 @@
   justify-content: center;
 }
 
+.flex-row{
+  @extend .flex;
+  align-items: center;
+  //flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
 .flex-space-between-content{
   justify-content: space-between;
 }
