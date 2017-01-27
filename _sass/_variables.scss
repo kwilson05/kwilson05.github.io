@@ -1,0 +1,17 @@
+.widths {}
+
+.weight {}
+
+$widths-limit:(
+
+  small-device: 35.5em  //568px/16px
+  ,medium-device: 45em  //960px/16px
+  ,large-device: 80em   //1280px/16px
+  //64em //1024px/16px
+  ,
+);
+
+
+$x-large-font:  3.5em;
+
+$large-font: 2em;    /* 50px/16px;*/;

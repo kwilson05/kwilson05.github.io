@@ -1,0 +1,8 @@
+
+.content{
+  margin: 0px, 10px;
+
+  @include max-width-limit(large-device){
+    width: 75%;
+  }
+}

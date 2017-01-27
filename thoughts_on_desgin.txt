@@ -1,51 +1,25 @@
-Personal web site
+DONE:
 
-Content:
+home page sectios and button are done;
+- Move further reading button to right of
 
-      Landing/Home page:
-        Picture of myself
-        brief about me section;
-        two buttons to the blog and project page
-        github link
-        stackoverflow link
+NOT DONE:
+- Move on to coding the sections in the blog page,  buttons, img,.......
 
+- Why am I getting warning for widths that are not null
 
-      Blog:
-        List each post title with a preview of the post
-          - The title will be link to the actual post
-          change the layout for the post page;
+- Still need to figure out typography and colors for the page
 
+- think of DRY way to color square button borders
 
+- add text shadow to titles
+    - maybe add a 3D effect to the buttons or title
 
-        Blog questions:
-          Do i want show the titles on the homepage?
-          If i show the titles do I want to show a preview of the content?
-          Maybe show only your three most recent posts?
-          Future- Figure out a way to show the most popular 2/3 and the most recent.....
-          For now, I want to list each post with it's title in preview?
+- Footers
 
-      Projects:
-        List of each project title
-          give detail enough description
-          link to source
-          if possible, link to live application
+- Calculate read time; Medium has a pretty good article on it
 
-      Footer:
-        Home Page: N/A
+- add strava link on homepage and svg.. maybe it won't be an svg..maybe it can be text with text shadow and what not..you did
 
-        Project:
-            Nav links to every page
-            twitter?
-            stackoverflow link
-            list all project's
-              - quick description
-              - link to project source
-            Do I want to section projects by current and archived projects? Maybe wait until I have more projects to show off lol
-
-        Blog:
-          Nav links to every page
-          Github link
-          twitter?
-          stackoverflow link
-
+- add ARROW after last sentence pointing to the links
 

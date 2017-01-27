@@ -3,8 +3,8 @@
 }
 
 section,
-ol,
-li,
+/*ol,
+li,*/
 article {
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@ h1.page-heading {
 }
 
 
+<<<<<<< HEAD
 .nav-to-post {
     font-size: 18px;
     border: 1px solid black;
@@ -43,6 +44,13 @@ h1.page-heading {
     padding-left: 20px;
     padding-right: 20px;
 }
+=======
+.nav-container{
+
+  width: inherit;;
+}
+
+>>>>>>> dev
 
 a.nav-to-post:hover {
     background-color: orange;
@@ -81,10 +89,7 @@ article p,
     width: 95%;
   }
 }
-.post-title {
-    text-decoration: none;
-    text-align: left;
-}
+
 
 time {
     text-align: left;

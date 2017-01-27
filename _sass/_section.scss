@@ -1,0 +1,39 @@
+/*Home page*/
+.main-section {
+  width: 100%;
+}
+
+.about-section {
+ /*large device my big monitor*/
+ // @include max-width(80em);
+ width: 65%;
+  margin: 1em .5em 3em .5em;
+
+  @include max-width-limit(large-device){
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+.internal-nav-section {
+  /*large device my big monitor*/
+  //@include max-width(9.375em);
+  margin-bottom: 1px;
+
+}
+
+.external-nav-section {
+  /*large device my big monitor*/
+  //@include max-width(9.375em);
+  margin-bottom: 1em;
+
+  svg {
+    display: inline;
+    margin: .5em;
+  }
+
+}
+
+
+
+/*Blog page*/
