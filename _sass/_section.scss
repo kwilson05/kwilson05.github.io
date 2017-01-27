@@ -1,8 +1,3 @@
-
-/*You started from big monitor sozi*/
-
-
-
 /*Home page*/
 .main-section {
   width: 100%;
@@ -11,6 +6,7 @@
 .about-section {
  /*large device my big monitor*/
  // @include max-width(80em);
+ width: 65%;
   margin: 1em .5em 3em .5em;
 
   @include max-width-limit(large-device){

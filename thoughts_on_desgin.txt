@@ -1,11 +1,11 @@
 DONE:
 
 home page sectios and button are done;
+- Move further reading button to right of
 
 NOT DONE:
 - Move on to coding the sections in the blog page,  buttons, img,.......
 
-- Move further reading button to right of
 - Why am I getting warning for widths that are not null
 
 - Still need to figure out typography and colors for the page
@@ -15,7 +15,7 @@ NOT DONE:
 - add text shadow to titles
     - maybe add a 3D effect to the buttons or title
 
-- Footer
+- Footers
 
 - Calculate read time; Medium has a pretty good article on it
 
