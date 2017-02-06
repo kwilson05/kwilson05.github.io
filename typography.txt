@@ -1,0 +1,49 @@
+legability:
+  does the typeface have a good text height? 60 to 75 percent on cap height
+
+  letter spacing: important for smaller heights
+
+  overall even color
+
+
+
+
+text and display typeface
+
+
+Mood:
+  Think about the contents mood; See if the typeface speaks in that certain mood
+
+
+
+Make sure the typeface has everything you need:
+  different line weights
+  italic styles
+  different widths for versatility
+  what accented chars are included
+  look numerical chars
+
+numberic old style: vary in height nice for text and body copy necessary for
+small text
+
+numeric lining figures: better for headers
+
+high x-height, large counters, loose letter spacing is good for body copy
+
+
+When picking body text:
+  - Look at stroke contrast and stroke consistency
+  - Optical; Try to a type face with different optical sizes for a font
+  - x height;  In order for letters to maintain clarity and understandability,
+  they must have a consistent rhythm, as well as include large, open forms.
+  - THE SPACES INSIDE OF LETTERS
+      - Do the ascenders and descenders have enough room, particularly f
+      and g? Do the counterforms inside of roundish letters
+      (e.g., b, d, p, q, o) have the same optical size and color
+      as those inside of straight-sided letters like, h, n, m, and u?
+      How different from one another are the forms of the capital I, the
+      lowercase i and l, and the figure 1? Can the 3 and the
+      8 be quickly differentiated from each other? How about the 5 and the 6?
+
+
+
