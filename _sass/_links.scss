@@ -3,6 +3,12 @@ a.nav-to-post:hover {
 }
 
 
-.links {
-    font-family: 'Open Sans';
+.link{
+  font-weight: $medium-weight;
+  font-size: 1.5em;
 }
+
+.blog-link{
+    @extend .link;
+    color: #FC4C01;
+  }

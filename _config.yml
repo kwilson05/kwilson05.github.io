@@ -5,6 +5,8 @@ prod_url: "http://kasoziwilson.com" # the base hostname & protocol for your site
 dev_url: "http://localhost:4000"
 twitter_username: KasoziWilson
 github_username:  kwilson05
+stackoverflow_username: thephantom05
+strava_username: kasoziawilson
 
 destination: _site
 
