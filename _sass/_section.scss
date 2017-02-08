@@ -1,39 +1,36 @@
 /*Home page*/
-.main-section {
+.main{
   width: 100%;
 }
 
-.about-section {
+.about {
  /*large device my big monitor*/
  // @include max-width(80em);
- width: 65%;
-  margin: 1em .5em 3em .5em;
+ width: 70%;
+  margin: 1em .5em;
 
-  @include max-width-limit(large-device){
+  @include max-width-limit(medium-device){
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+   @include max-width-limit(small-device){
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 0px;
   }
 }
 
-.internal-nav-section {
+.internal-nav {
   /*large device my big monitor*/
   //@include max-width(9.375em);
-  margin-bottom: 1px;
+  margin-bottom: 15px;
+  width: 30%;
 
-}
-
-.external-nav-section {
-  /*large device my big monitor*/
-  //@include max-width(9.375em);
-  margin-bottom: 1em;
-
-  svg {
-    display: inline;
-    margin: .5em;
+  @include max-width-limit(small-device){
+    width: 50%;
+    margin-bottom: 5px;
   }
 
 }
-
-
-
-/*Blog page*/

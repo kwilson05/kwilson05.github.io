@@ -17,7 +17,7 @@
   $max-width-value: get-width-limit-value($max-width-name);
 
   @if($max-width-value != null) {
-    @media(max-device-width: $max-width-value) {
+    @media(screen and max-width: $max-width-value) {
       @content;
     }
   }

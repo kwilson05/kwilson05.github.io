@@ -4,9 +4,8 @@
 
 $widths-limit:(
 
-  small-device: 35.5em  //568px/16px
-  ,medium-device: 45em  //960px/16px
-  ,large-device: 80em   //1280px/16px
+  small-device: 56em  //900px/16px python calc
+  ,medium-device: 73.125em   //1170px/16px
   //64em //1024px/16px
   ,
 );
@@ -15,3 +14,5 @@ $widths-limit:(
 $x-large-font:  3.5em;
 
 $large-font: 2em;    /* 50px/16px;*/;
+
+$medium-weight: 600;
