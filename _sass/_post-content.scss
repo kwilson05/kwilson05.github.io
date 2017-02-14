@@ -1,9 +1,12 @@
 .post-content,
 .post-content-nav{
-
   width: 50%;
-  font-size: 1.25em;
+  margin: 5px;
 
 
+   @include max-width-limit(medium-device) {
+    margin: 5px;
+    width: 75%;
+  }
 }
 

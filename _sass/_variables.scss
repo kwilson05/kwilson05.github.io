@@ -1,6 +1,4 @@
-.widths {}
 
-.weight {}
 
 $widths-limit:(
 
@@ -12,7 +10,9 @@ $widths-limit:(
 
 
 $x-large-font:  3.5em;
+$large-font: 2.5em;    /* 50px/16px;*/;
+$medium-font: 2em;
+$small-font: 1.2em;
+$x-small-font: 1em;
 
-$large-font: 2em;    /* 50px/16px;*/;
-
-$medium-weight: 600;
+$semi-bold: 600;

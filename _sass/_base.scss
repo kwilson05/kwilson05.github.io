@@ -5,11 +5,14 @@
 }
 
 body{
-    font-size: 1em;   //16px
+    font-size: 1.125em;   //16px
     line-height: 1.5;
     font-family: "source-sans-pro",sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $semi-bold;
+}
 p {
     font-size: 1.1em; //18px;
     text-align: left;
