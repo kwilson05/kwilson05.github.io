@@ -8,6 +8,7 @@ github_username:  kwilson05
 stackoverflow_username: thephantom05
 strava_username: kasoziawilson
 
+
 destination: _site
 
 sass:
@@ -16,7 +17,7 @@ sass:
 author:
   name: "Kasozi A. Wilson"
   job: "Software Developer"
-  bio: |
+  bio:
     I am a forever learner who luckily chose a career where innovation is not scarce.
     I attack most of my problems with some Java but HTML and CSS are becoming apart of my toolset too.
     Javascript will be my new tool to learn in 2017.
@@ -26,6 +27,7 @@ author:
     Keep up with me by checking out my Blog, GitHub, StackOverflow, and Strava:
 
   thumb: "Kasozi_Tri_2015.jpg"
+  description:  I am a forever learner who luckily chose a career where innovation is not scarce.
 
 
 collections:
