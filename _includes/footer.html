@@ -1,19 +1,6 @@
 <footer>
     <a href="{{site.prod_url}}">Home</a>
-
-    {% if page.url == '/projects/' %}
-
-    <a href="{{"/blog" | prepend:site.prod_url}}">Blog</a>
-
-    {% elsif page.url == '/blog/' %}
-
-    <a href="{{"/projects" | prepend: site.prod_url}}">Projects</a>
-
-    {% else %}
-
-    <a class="links" href="{{"/projects" | prepend: site.prod_url}}">Projects</a>
+    {% if page.url != '/blog/' %}
     <a class="links" href="{{ "/blog" | prepend:site.prod_url}}">Blog</a>
-    <span>{{page.url}}</span>
-
     {% endif %}
 </footer>

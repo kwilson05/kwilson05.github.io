@@ -1,9 +1,13 @@
 <html>
   {% include head.html %}
-  <body >
-  <article>
-      {{ content }}
-  <artilcle>
+  <body class= "flex-column-center">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <article class= "flex-column-center">
+  <p class="post-content">
+      {{ content | remove: '<p>' | remove: '</p>' }}
+    </p>
+  </article>
   </body>
+  <hr>
   {% include footer.html %}
 </html>

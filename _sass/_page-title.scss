@@ -1,11 +1,11 @@
 
 
 .page-title{
-  margin-top: 10px;
+  margin: 25px ;
   font-size: $x-large-font;
+
+   @include max-width-limit(small-device){
+    margin: 25px ;
+  font-size: $large-font;
+  }
 }
-
-
-  .article_time{
-   display: block;
-   }
