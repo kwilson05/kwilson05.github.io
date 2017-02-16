@@ -8,5 +8,11 @@
     margin: 5px;
     width: 75%;
   }
+
+
+   @include max-width-limit(small-device) {
+    margin: 5px;
+    width: 85%;
+  }
 }
 

@@ -3,10 +3,11 @@
 .post-title {
   font-size: $large-font;
   font-weight: $semi-bold;
-  margin: 5px;
+  margin: 10px, 10px;
+  /*width: inherit;*/
+  text-align: center;
 
   @include max-width-limit(medium-device) {
-    margin: 5px;
     font-size: $medium-font;
   }
 }
