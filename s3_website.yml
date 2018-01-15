@@ -1,0 +1,24 @@
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+#s3_bucket: <%= ENV['DEPLOY'] == 'production' ? '' : 'dev.' %>olivermak.es
+cloudfront_distribution_id: 'E1APYA7BX42GXO'
+cloudfront_invalidate_root: true
+
+max_age:
+  "*.css": 2419200
+  "*.jpg": 2419200
+  "*.js": 2419200
+  "*.png": 2419200
+  "*.svg": 2419200
+
+gzip:
+  - .css
+  - .html
+  - .md
+  - .svg
+  - .js
+
+exclude_from_upload:
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
