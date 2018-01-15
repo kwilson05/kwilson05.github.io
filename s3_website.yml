@@ -1,5 +1,5 @@
 s3_id: <%= ENV['S3_ID'] %>
-s3_secret: <%= ENV['S3_SECRET'] %>
+s3_secret: <%= ENV['S3_Secret'] %>
 s3_bucket: kasoziwilson
 cloudfront_distribution_id: 'E1APYA7BX42GXO'
 cloudfront_invalidate_root: true
