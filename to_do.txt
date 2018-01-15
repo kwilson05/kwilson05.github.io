@@ -1,0 +1,6 @@
+
+
+remove unwanted dependecies
+see if i can convert sass to css on my own with jekyll
+see if i can convert files to hash with jekyll
+using gulp with jekyll
