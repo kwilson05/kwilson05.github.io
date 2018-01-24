@@ -2,10 +2,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{author.description}}">
     <script src="https://use.typekit.net/avm6tvw.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="author" content="author.name">
+    <meta name="description" content="{{author.description}}">
+    <meta property="og:image" content="{{site.author.thumb}}">
+    <meta property="og:description" content="{{author.description}}">
+    <meta property="og:title" content="Kasozi Wilson">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
