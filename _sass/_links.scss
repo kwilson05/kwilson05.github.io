@@ -1,7 +1,13 @@
-a.nav-to-post:hover {
-    background-color: orange;
+a.link:hover {
+    foreground-color: orange;
+    text-decoration: underline;
 }
 
+a:link,
+a:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
 
 .link{
   font-size: 1.5em;
