@@ -1,24 +1,15 @@
 ---
 layout: home
 ---
-
-<section class="main flex-column-center">
-
-<!--style="border: 5px solid black;">-->
-    <div class="about flex-column-center"> <!--style="border: 5px solid black;">-->
+<main class="main">
 
 
-        <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="img-half-rounded">
-
-        <article class="flex-column-center">
-        <p>Kasozi Wilson</p>
-        {% include header.html %}
-
+    <div style="height:100%" class="flex-column-center" >
+        <img src="{{ site.author.thumb | prepend: '/images/'}}" alt="author thumb" class="img-rounded">
+        <label style="font-size:18px; font-weight: bold;">Kasozi Andewle Wilson</label>
+        <p style="color:#ff9b35; font-weight:bold;"> Full Stack Developer @Ingen Software</p>
 
 
-
-
-      </article>
+    {% include index_nav_bar.html %}
     </div>
-
-</section>
+</main>

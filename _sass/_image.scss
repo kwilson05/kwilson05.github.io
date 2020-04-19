@@ -1,13 +1,13 @@
-.img-half-rounded{
-  border-radius: 50%;
-  width: 50%;
+.img-rounded{
+  border-radius: 20%;
+  width: 30%;
 
    @include max-width-limit(medium-device){
-    width: 52%;
+    width: 32%;
   }
 
   @include max-width-limit(small-device){
-    width: 80%;
+    width: 40%;
   }
 
 }

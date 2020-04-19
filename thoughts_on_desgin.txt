@@ -3,6 +3,8 @@ DONE:
 home page sectios and button are done;
 - Move further reading button to right of
 
+- add strava link on homepage and svg.. maybe it won't be an svg..maybe it can be text with text shadow and what not..you did
+
 NOT DONE:
 - Move on to coding the sections in the blog page,  buttons, img,.......
 
@@ -19,7 +21,6 @@ NOT DONE:
 
 - Calculate read time; Medium has a pretty good article on it
 
-- add strava link on homepage and svg.. maybe it won't be an svg..maybe it can be text with text shadow and what not..you did
 
 - add ARROW after last sentence pointing to the links
 

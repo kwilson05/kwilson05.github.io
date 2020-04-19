@@ -1,6 +1,21 @@
 
+DONE:
+
+
+
+NOT DONE:
+
+- design writings page better;
+- design actually blog post page better;
+  - after you click into read further;
 
 remove unwanted dependecies
 see if i can convert sass to css on my own with jekyll
 see if i can convert files to hash with jekyll
 using gulp with jekyll
+
+
+
+FYI:
+
+s3_website is the module or gem for pushing your changes to s3

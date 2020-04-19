@@ -1,5 +1,5 @@
-a.link:hover {
-    foreground-color: orange;
+.link:hover {
+    color: #ff9b35;
     text-decoration: underline;
 }
 
@@ -10,7 +10,9 @@ a:visited {
 }
 
 .link{
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .blog-link{

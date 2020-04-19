@@ -1,10 +1,17 @@
 * {
 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
     box-sizing: border-box;
+}
+
+html, body{
+
+    height: 100%;
+    width: 100%;
+
 }
 
 body,
@@ -18,17 +25,17 @@ button {
 }
 
 a {
-    -webkit-tap-highlight-color: #FF5E99;
+    -webkit-tap-highlight-color: #ff9b35;
 }
 
 ::-moz-selection {
-    background: #FF5E99;
+    background: #ff9b35;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #FF5E99;
+    background: #ff9b35;
     color: #fff;
     text-shadow: none;
 }
@@ -48,12 +55,11 @@ em {
 .group:after {
     content: ".";
     display: block;
-    height: 0;
     clear: both;
     visibility: hidden;
 }
 
-* html .group {
+* html.group {
     height: 1%;
 }
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Four blockades for acheiving your goal"
 ---
 
