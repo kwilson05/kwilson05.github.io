@@ -5,11 +5,11 @@ cloudfront_distribution_id: 'E1APYA7BX42GXO'
 cloudfront_invalidate_root: true
 
 max_age:
-  "*.css": 2419200
-  "*.jpg": 2419200
-  "*.js": 2419200
-  "*.png": 2419200
-  "*.svg": 2419200
+  "*.css": 86400
+  "*.jpg": 86400
+  "*.js": 86400
+  "*.png": 86400
+  "*.svg": 86400
 
 gzip:
   - .css
