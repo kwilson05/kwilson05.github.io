@@ -1,8 +1,0 @@
-
-
-
-@function get-width-limit-value($width-name){
-
-  @return map-get($widths-limit, $width-name);
-
-}

@@ -1,9 +1,0 @@
-
-.content{
-  margin: 0px, 10px;
-  width: 50%;
-
-  @include max-width-limit(large-device){
-    width: 50%;
-  }
-}
