@@ -1,4 +1,4 @@
-# My Personal Blog Site
+# My Personal Site
 
 ## Dev Environment Setup
 
