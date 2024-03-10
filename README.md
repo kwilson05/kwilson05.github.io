@@ -8,7 +8,7 @@
 npm install
 ```
 
-1. Run Eleventy
+2. Run Eleventy
 
 Generate a production-ready build to the `_site` folder:
 
