@@ -12,11 +12,22 @@ import ResetCss from '@components/ResetCss.astro';
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{title}</title>
+        <ResetCss />
     </head>
-    <ResetCss />
     <body>
-        <NavMenu />
-        <slot />
+        <main>
+            <NavMenu />
+            <section>
+                <slot />
+            </section>
+        </main>
     </body>
-
 </html>
+<style>
+    main {
+        padding: 32px 136px;
+    }
+    section {
+        padding: 32px;
+    }
+</style>
