@@ -1,7 +1,27 @@
 ---
 import Baselayout from '@layouts/Baselayout.astro';
+import ExternalLink from '@components/ExternalLink.astro';
+
+const META_METRICS_URL = 'https://metametricsinc.com/about-us/';
+const INGEN_SOFTWARE_URL = 'http://ingensoftware.com/MainSite/';
+const ESYSTEM_INC_URL = 'https://www.esystems-inc.com/';
 ---
 
 <Baselayout title="Home">
-    <p>Hello World</p>
+    <h1>Kasozi Wilson</h1>
+    <p>
+        What's going on! I'm a software engineer, runner, hiker and potter based
+        in the Bronx, NY. I've been writing code since 2014, hard to believe
+        honestly.😬 Most of that experience has been centered around web
+        development. Currently, I'm making measurement meaningful by matching
+        students to learning resources at <ExternalLink href={META_METRICS_URL}
+            >MetaMetrics</ExternalLink
+        >.
+    </p>
+    <p>
+        Before MetaMetrics, I lead projects as a Lead Developer at
+        <ExternalLink href={INGEN_SOFTWARE_URL}>Ingen Software</ExternalLink> and
+        was a software developer at
+        <ExternalLink href={ESYSTEM_INC_URL}>Esystems Inc. </ExternalLink>
+    </p>
 </Baselayout>
