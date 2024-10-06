@@ -1,0 +1,47 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ExternalLink from '@components/ExternalLink.astro';
+
+import {
+    POTTERY_IG_URL,
+    META_METRICS_URL,
+    INGEN_SOFTWARE_URL,
+    ESYSTEM_INC_URL,
+    GITHUB_URL,
+    YOUTUBE_URL,
+} from '../extenalLinks';
+---
+
+<BaseLayout title="Home">
+    <h1>Kasozi Wilson</h1>
+    <p>
+        What's going on! I'm a software engineer, runner, hiker and <ExternalLink
+            href={POTTERY_IG_URL}>potter</ExternalLink
+        > based in the Bronx, NY. I've been writing code since 2014, hard to believe
+        honestly. Most of that experience has been centered around web development.
+        Currently, I'm making measurement meaningful by matching students to learning
+        resources at
+        <ExternalLink href={META_METRICS_URL}>MetaMetrics</ExternalLink>.
+    </p>
+    <p>
+        Before MetaMetrics, I lead projects as a Lead Developer at
+        <ExternalLink href={INGEN_SOFTWARE_URL}>Ingen Software</ExternalLink> and
+        was a Software Developer at <ExternalLink href={ESYSTEM_INC_URL}
+            >Esystems Inc</ExternalLink
+        >.
+    </p>
+    <p>
+        Catch me on <ExternalLink href={GITHUB_URL}>Github</ExternalLink> and <ExternalLink
+            href={YOUTUBE_URL}>Youtube</ExternalLink
+        >.
+    </p>
+</BaseLayout>
+<style>
+    p {
+        width: 700px;
+        margin: 8px;
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+    }
+</style>

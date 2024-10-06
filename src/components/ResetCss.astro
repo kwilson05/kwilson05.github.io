@@ -1,0 +1,98 @@
+---
+
+---
+
+<style is:global>
+    * {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        outline: 0px;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    body,
+    input,
+    select,
+    textarea,
+    button {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    img {
+        -ms-interpolation-mode: bicubic;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    .group:after {
+        content: '.';
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+
+    * html.group {
+        height: 1%;
+    }
+
+    /* IE6 */
+
+    *:first-child + html .group {
+        min-height: 1px;
+    }
+
+    body {
+        font-size: 1.125em;
+        line-height: 1.5;
+        font-family: sans-serif;
+        color: #2c2c2c;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+
+    p {
+        text-align: left;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+
+    a {
+        color: hsl(211, 100%, 38%);
+    }
+
+    a:hover {
+        color: hsl(305, 61%, 47%);
+    }
+
+    *:focus {
+        box-shadow:
+            0px 1px 2px rgba(0, 0, 0, 0.05),
+            0px 0px 0px 2.5px #ffffff,
+            0px 0px 0px 3.5px #000000;
+        border-radius: 4px;
+        outline: rgb(43, 43, 43) solid 2px;
+        outline-offset: 2px;
+    }
+</style>
