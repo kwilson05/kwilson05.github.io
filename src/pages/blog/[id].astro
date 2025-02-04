@@ -1,16 +1,12 @@
 ---
-import type {
-    InferGetStaticParamsType,
-    InferGetStaticPropsType,
-    GetStaticPaths,
-} from 'astro';
+import type { GetStaticPaths } from 'astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import { type BlogFrontMatterType } from '@types';
+import BaseLayout from '@layouts/BaseLayout.astro';
 
 export const getStaticPaths = (async () => {
     const publishedBlogs = await getCollection(
         'blog',
-        ({ data }) => !data.draft === true
+        ({ data }) => !data.draft
     );
 
     return publishedBlogs.map((blogEntry: CollectionEntry<'blog'>) => ({
@@ -28,6 +24,8 @@ const { blogEntry } = Astro.props as BlogEntryProp;
 const { Content } = await render(blogEntry);
 ---
 
-<h1>{blogEntry.data.title}</h1>
-<h2>{blogEntry.data.publishedDate.toLocaleDateString()}</h2>
-<Content />
+<BaseLayout title={blogEntry.data.title}>
+    <h1>{blogEntry.data.title}</h1>
+    <h2>{blogEntry.data.publishedDate.toLocaleDateString()}</h2>
+    <Content />
+</BaseLayout>
