@@ -6,7 +6,10 @@
         "baseUrl": ".",
         "paths": {
             "@components/*": ["src/components/*"],
-            "@layouts/*": ["src/layouts/*"]
-        }
-    }
+            "@layouts/*": ["src/layouts/*"],
+            "@types": ["src/types.ts"]
+        },
+        "allowJs": true // required, and included with all Astro templates
+    },
+    "files": ["src/types.ts"]
 }

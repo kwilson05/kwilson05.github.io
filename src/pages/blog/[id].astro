@@ -1,0 +1,33 @@
+---
+import type {
+    InferGetStaticParamsType,
+    InferGetStaticPropsType,
+    GetStaticPaths,
+} from 'astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { type BlogFrontMatterType } from '@types';
+
+export const getStaticPaths = (async () => {
+    const publishedBlogs = await getCollection(
+        'blog',
+        ({ data }) => !data.draft === true
+    );
+
+    return publishedBlogs.map((blogEntry: CollectionEntry<'blog'>) => ({
+        params: { id: blogEntry.id },
+        props: {
+            blogEntry,
+        },
+    }));
+}) satisfies GetStaticPaths;
+
+type BlogEntryProp = {
+    blogEntry: CollectionEntry<'blog'>;
+};
+const { blogEntry } = Astro.props as BlogEntryProp;
+const { Content } = await render(blogEntry);
+---
+
+<h1>{blogEntry.data.title}</h1>
+<h2>{blogEntry.data.publishedDate.toLocaleDateString()}</h2>
+<Content />
