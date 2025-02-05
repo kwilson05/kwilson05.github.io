@@ -1,8 +1,17 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { getPublishedBlogEntries } from '@utils/blog';
+const publishedBlogEntries = await getPublishedBlogEntries();
 ---
 
 <BaseLayout title="Blog">
-    <h1>Blog</h1>
-    <p>Welcome to my thoughts.</p>
+    <h1>Blog Posts</h1>
+    {
+        publishedBlogEntries.map((blogEntry) => (
+            <div>
+                <h1>{blogEntry.data.title}</h1>
+                <p>{blogEntry.data.headline}</p>
+            </div>
+        ))
+    }
 </BaseLayout>

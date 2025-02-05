@@ -1,15 +1,13 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { getPublishedBlogEntries } from '@utils/blog.ts';
 
 export const getStaticPaths = (async () => {
-    const publishedBlogs = await getCollection(
-        'blog',
-        ({ data }) => !data.draft
-    );
+    const publishedBlogEntries = await getPublishedBlogEntries();
 
-    return publishedBlogs.map((blogEntry: CollectionEntry<'blog'>) => ({
+    return publishedBlogEntries.map((blogEntry: CollectionEntry<'blog'>) => ({
         params: { id: blogEntry.id },
         props: {
             blogEntry,
