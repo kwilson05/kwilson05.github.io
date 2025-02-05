@@ -1,0 +1,16 @@
+---
+const { blogEntry } = Astro.props;
+---
+
+<li>
+    <a href={`/blog/${blogEntry.id}`}>{blogEntry.data.title}</a>
+    <p>{blogEntry.data.headline}</p>
+</li>
+<style>
+    li {
+        border: solid black 1px;
+        padding: 12px;
+        max-width: 500px;
+        border-radius: 2px;
+    }
+</style>
