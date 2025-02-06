@@ -1,26 +1,45 @@
 ---
 const { blogEntry } = Astro.props;
+const formattedDate = new Date(blogEntry.data.publishedDate).toLocaleDateString(
+    'en-US',
+
+    {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+    }
+);
 ---
 
 <li>
-    <div class="title">
-        <a href={`/blog/${blogEntry.id}`}>{blogEntry.data.title}</a>
+    <div class="header">
+        <a class="title" href={`/blog/${blogEntry.id}`}
+            >{blogEntry.data.title}</a
+        >
+        <p class="published-date">
+            {formattedDate}
+        </p>
     </div>
     <p>{blogEntry.data.headline}</p>
 </li>
+
 <style>
     li {
-        border: solid black 1px;
+        border-bottom: solid rgb(199, 198, 198) 1px;
         padding: 12px;
         padding-bottom: 4px;
 
         max-width: 40rem;
         border-radius: 2px;
-        box-shadow: 0px 1px 1px rgb(166, 165, 165);
     }
 
-    .title {
-        text-align: center;
+    .header {
         margin-bottom: 12px;
+    }
+    .published-date {
+        font-size: 0.85rem;
+    }
+    .title {
+        font-size: 1.5rem;
     }
 </style>
