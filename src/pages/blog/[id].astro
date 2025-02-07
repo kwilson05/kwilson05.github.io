@@ -2,7 +2,8 @@
 import type { GetStaticPaths } from 'astro';
 import { render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@layouts/BaseLayout.astro';
-import { getPublishedBlogEntries } from '@utils/blog.ts';
+import { getPublishedBlogEntries } from '@utils/blog';
+import { dateWithShortMonth } from '@utils/date';
 
 export const getStaticPaths = (async () => {
     const publishedBlogEntries = await getPublishedBlogEntries();
@@ -19,11 +20,12 @@ type BlogEntryProp = {
     blogEntry: CollectionEntry<'blog'>;
 };
 const { blogEntry } = Astro.props as BlogEntryProp;
+const formattedDate = dateWithShortMonth(blogEntry.data.publishedDate);
 const { Content } = await render(blogEntry);
 ---
 
 <BaseLayout title={blogEntry.data.title}>
     <h1>{blogEntry.data.title}</h1>
-    <h2>{blogEntry.data.publishedDate.toLocaleDateString()}</h2>
+    <h2>{formattedDate}</h2>
     <Content />
 </BaseLayout>

@@ -1,15 +1,8 @@
 ---
+import { dateWithShortMonth } from '@utils/date';
 const { blogEntry } = Astro.props;
 
-const formattedDate = new Date(blogEntry.data.publishedDate).toLocaleDateString(
-    'en-US',
-
-    {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-    }
-);
+const formattedDate = dateWithShortMonth(blogEntry.data.publishedDate);
 ---
 
 <li>
