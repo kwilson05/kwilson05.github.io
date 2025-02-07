@@ -1,5 +1,6 @@
 ---
 const { blogEntry } = Astro.props;
+
 const formattedDate = new Date(blogEntry.data.publishedDate).toLocaleDateString(
     'en-US',
 

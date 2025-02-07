@@ -1,0 +1,32 @@
+---
+const { page } = Astro.props;
+---
+
+<nav>
+    {
+        page.url.prev ? (
+            <a
+                href={page.url.prev}
+                aria-label={`Display Page ${page.currentPage - 1}`}
+            >
+                Previous
+            </a>
+        ) : null
+    }
+    {
+        page.url.next ? (
+            <a
+                href={page.url.next}
+                aria-label={`Display Page ${page.currentPage + 1}`}
+            >
+                Next
+            </a>
+        ) : null
+    }
+</nav>
+<style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+</style>

@@ -1,0 +1,54 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getPublishedBlogEntries } from '@utils/blog.ts';
+import BlogEntry from '@components/BlogEntry.astro';
+import Pagination from '@components/Pagination.astro';
+import CurrentPage from '@components/CurrentPage.astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+    const publishedBlogEntries = await getPublishedBlogEntries();
+
+    return paginate(publishedBlogEntries, { pageSize: 10 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title="Blog Posts">
+    <div class="header">
+        <h1 aria-describedby="page-number">Blog Posts</h1>
+        <CurrentPage id="page-number" page={page} />
+    </div>
+    <ul>
+        <hr />
+        {page.data.map((blogEntry) => <BlogEntry blogEntry={blogEntry} />)}
+    </ul>
+
+    <Pagination page={page} />
+</BaseLayout>
+
+<style>
+    .header {
+        margin-bottom: 42px;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+        @media (max-width: 720px) {
+            font-size: 2rem;
+        }
+    }
+    .header span {
+        font-size: 1.5rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-bottom: 12px;
+    }
+    hr {
+        border-bottom: solid rgb(199, 198, 198) 1px;
+        max-width: 40rem;
+    }
+</style>
