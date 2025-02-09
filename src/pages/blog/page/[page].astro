@@ -23,6 +23,7 @@ const { page } = Astro.props;
     <ul>
         <hr />
         {page.data.map((blogEntry) => <BlogEntry blogEntry={blogEntry} />)}
+        {page.data.length === 0 && <h2>Working on something here!!!</h2>}
     </ul>
 
     <Pagination page={page} />
