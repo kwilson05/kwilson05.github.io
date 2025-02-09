@@ -1,9 +1,16 @@
 {
+    "extends": "astro/tsconfigs/strict",
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"],
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
             "@components/*": ["src/components/*"],
-            "@layouts/*": ["src/layouts/*"]
-        }
-    }
+            "@layouts/*": ["src/layouts/*"],
+            "@types": ["src/types.ts"],
+            "@utils/*": ["src/utils/*"]
+        },
+        "allowJs": true // required, and included with all Astro templates
+    },
+    "files": ["src/types.ts"]
 }

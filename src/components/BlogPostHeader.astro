@@ -1,0 +1,48 @@
+---
+import { dateWithShortMonth } from '@utils/date';
+
+const { blogPost, isPost } = Astro.props;
+
+const formattedPublishedDate = dateWithShortMonth(blogPost.data.publishedDate);
+---
+
+<div class="header">
+    {
+        !isPost && (
+            <span>
+                <a href={`/blog/${blogPost.id}`}>{blogPost.data.title}</a>
+                <p class="published-date">{formattedPublishedDate}</p>
+            </span>
+        )
+    }
+
+    {
+        isPost && (
+            <span>
+                <h1>{blogPost.data.title}</h1>
+                <p class="published-date">{formattedPublishedDate}</p>
+            </span>
+        )
+    }
+</div>
+<style>
+    .header {
+        margin-bottom: 12px;
+    }
+    a + .published-date {
+        font-size: 0.85rem;
+    }
+    h1 + .published-date {
+        font-size: 1.1rem;
+    }
+    .header a {
+        font-size: 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        @media (max-width: 720px) {
+            font-size: 2rem;
+        }
+    }
+</style>

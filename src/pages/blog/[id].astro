@@ -1,0 +1,31 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getPublishedBlogEntries } from '@utils/blog';
+import { dateWithShortMonth } from '@utils/date';
+import BlogPostHeader from '@components/BlogPostHeader.astro';
+
+export const getStaticPaths = (async () => {
+    const publishedBlogEntries = await getPublishedBlogEntries();
+
+    return publishedBlogEntries.map((blogPost: CollectionEntry<'blog'>) => ({
+        params: { id: blogPost.id },
+        props: {
+            blogPost,
+        },
+    }));
+}) satisfies GetStaticPaths;
+
+type BlogPostProp = {
+    blogPost: CollectionEntry<'blog'>;
+};
+const { blogPost } = Astro.props as BlogPostProp;
+const formattedDate = dateWithShortMonth(blogPost.data.publishedDate);
+const { Content } = await render(blogPost);
+---
+
+<BaseLayout title={blogPost.data.title}>
+    <BlogPostHeader blogPost={blogPost} isPost={true} />
+    <Content />
+</BaseLayout>
