@@ -2,6 +2,7 @@
 const { title, og_type = 'website' } = Astro.props;
 import ResetCss from '@components/ResetCss.astro';
 import Navmenu from '@components/NavMenu.astro';
+const BASE_URL = import.meta.env.SITE;
 ---
 
 <html lang="en">
@@ -11,7 +12,11 @@ import Navmenu from '@components/NavMenu.astro';
         <meta property="og:title" content={title} />
         <meta property="og:type" content={og_type} />
         <meta property="og:url" content={Astro.url} />
-        <meta property="og:img" content="/assets/images/hiking.webp" />
+        <meta
+            property="og:image"
+            content=`${BASE_URL}assets/images/kasozi_pnw.jpg`
+        />
+
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{title}</title>
 
