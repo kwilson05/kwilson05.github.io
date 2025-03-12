@@ -10,17 +10,17 @@ import {
 } from '../extenalLinks';
 const BASE_URL = import.meta.env.SITE;
 const description =
-    "What's going on! I'm a software engineer, runner, hiker and potter based in the Bronx, NY.";
+    "What's going on! I'm a software engineer, runner, hiker, and potter based in the Bronx.";
 ---
 
 <BaseLayout title="Home" description={description}>
     <h1>Kasozi Wilson</h1>
     <img src=`${BASE_URL}assets/images/kasozi_pnw.jpg` />
     <p>
-        What's going on! I'm a software engineer, runner, hiker and <ExternalLink
+        What's going on! I'm a software engineer, runner, hiker, and <ExternalLink
             href={POTTERY_IG_URL}>potter</ExternalLink
-        > based in the Bronx, NY. I've been writing code since 2014, and most of
-        that experience has been centered around web development.
+        > based in the Bronx. I've been writing code since 2014, and most of that
+        experience has been centered around web development.
     </p>
     <p>
         Catch me on <ExternalLink href={GITHUB_URL}>Github</ExternalLink>, <ExternalLink
