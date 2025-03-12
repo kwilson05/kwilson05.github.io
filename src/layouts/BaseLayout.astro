@@ -1,5 +1,5 @@
 ---
-const { title, og_type = 'website', article_meta } = Astro.props;
+const { title, og_type = 'website', description } = Astro.props;
 import ResetCss from '@components/ResetCss.astro';
 import Navmenu from '@components/NavMenu.astro';
 const BASE_URL = import.meta.env.SITE;
@@ -12,6 +12,7 @@ const BASE_URL = import.meta.env.SITE;
         <meta property="og:title" content={title} />
         <meta property="og:type" content={og_type} />
         <meta property="og:url" content={Astro.url} />
+        <meta property="og:description" content={description} />
         <meta
             property="og:image"
             content=`${BASE_URL}assets/images/kasozi_pnw.jpg`
@@ -22,6 +23,7 @@ const BASE_URL = import.meta.env.SITE;
             property="twitter:image"
             content=`${BASE_URL}assets/images/kasozi_pnw.jpg`
         />
+        <meta name="twitter:description" content={description} />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{title}</title>
 
