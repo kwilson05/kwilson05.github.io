@@ -10,7 +10,4 @@ export default defineConfig({
     redirects: {
         '/blog': '/blog/page/1',
     },
-    server: {
-        allowedHosts: true,
-    },
 });
