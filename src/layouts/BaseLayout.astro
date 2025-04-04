@@ -2,6 +2,7 @@
 const { title, og_type = 'website', description } = Astro.props;
 import ResetCss from '@components/ResetCss.astro';
 import Navmenu from '@components/NavMenu.astro';
+import { OG_IMAGE_URL } from '../constants';
 const BASE_URL = import.meta.env.SITE;
 ---
 
@@ -13,17 +14,13 @@ const BASE_URL = import.meta.env.SITE;
         <meta property="og:type" content={og_type} />
         <meta property="og:url" content={Astro.url} />
         <meta property="og:description" content={description} />
-        <meta
-            property="og:image"
-            content=`${BASE_URL}assets/images/kasozi_pnw.jpg`
-        />
+        <meta property="og:image" content={OG_IMAGE_URL(BASE_URL)} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
-        <meta
-            property="twitter:image"
-            content=`${BASE_URL}assets/images/kasozi_pnw.jpg`
-        />
+        <meta property="twitter:image" content={OG_IMAGE_URL(BASE_URL)} />
         <meta name="twitter:description" content={description} />
+        <meta name="og:image:width" content="300" />
+        <meta name="og:image:height" content="300" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{title}</title>
 

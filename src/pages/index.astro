@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
 import ExternalLink from '@components/ExternalLink.astro';
-
+import { OG_IMAGE_URL } from '../constants';
 import {
     POTTERY_IG_URL,
     LINKEDIN,
@@ -15,7 +15,7 @@ const description =
 
 <BaseLayout title="Home" description={description}>
     <h1>Kasozi Wilson</h1>
-    <img src=`${BASE_URL}assets/images/kasozi_pnw.jpg` />
+    <img src={OG_IMAGE_URL(BASE_URL)} />
     <p>
         What's going on! I'm a software engineer, runner, hiker, and <ExternalLink
             href={POTTERY_IG_URL}>potter</ExternalLink
