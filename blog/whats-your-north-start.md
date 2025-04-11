@@ -1,8 +1,8 @@
 ---
-title: '👋🏾 Public Service Announcement'
+title: 'What’s My North Star??? ✳️'
 draft: false
-publishedDate: 2025-02-20
-headline: "Welcome to my blog! I can't wait to share my experiences with you. That's what learning in public is all about. 🤔"
+publishedDate: 2025-04-11
+headline: "Since being laid off last December, a recurring theme has been popping up in chats with my friends: 'What's Your North Star?' I always make goals yearly, but what are those goals driving me towards?"
 ---
 
 Since being laid off last December, a recurring theme has been popping up in chats with my friends: 'What's Your North Star?' I always make goals yearly, but what are those goals driving me towards?
@@ -20,4 +20,6 @@ Well, you have to start somewhere, and I wanted to make sure my next job was ali
 
 Okay...okay, now we're cooking!!! With these pillars, I've been searching for jobs that will push me towards being a staff engineer, while giving back to my community or a social cause. There are plenty of job opportunities, even in this market. But, not too many align with giving back to the community. [Fast Forward](https://jobs.ffwd.org/jobs), [{key:values}](https://www.keyvalues.com/), and [Climatebase](https://climatebase.org/) helped in that regard, but there are still limited opportunities. I'll keep trying though. Maybe I'll lean out my needs by solely focusing on getting a job that pushes toward a staff engineer. We'll see, we will see!! But, I'm happy to be making choices aligned with myself. It makes this a worthwhile journey!!! 🙂
 
-Reach out @ <soziandwelewilson@gmail.com>, if you know of any other job search sites that help find companies working toward a social cause or just hit me up to say:"Hey there, sir!!!" or give me feedback on my blog.
+Reach out @ <soziandwelewilson@gmail.com> if you know of any other job search sites that help find companies working toward a social cause. You can also just hit me up to say, "Hey there, sir!!!" or give me feedback on my blog.
+
+Thanks to Darian and Kim for editing this post!!
