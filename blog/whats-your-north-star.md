@@ -1,4 +1,5 @@
 ---
+id: 'whats-your-north-star'
 title: '⭐ What’s Your North Star???'
 draft: false
 publishedDate: 2025-04-11
