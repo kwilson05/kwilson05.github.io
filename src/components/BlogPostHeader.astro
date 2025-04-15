@@ -1,6 +1,7 @@
 ---
 import { dateWithShortMonth } from '@utils/date';
-
+import ReadingTime from '@components/ReadingTime.astro';
+import CircleSeparator from '@components/CircleSeparator.astro';
 const { blogPost, isPost } = Astro.props;
 
 const formattedPublishedDate = dateWithShortMonth(blogPost.data.publishedDate);
@@ -9,19 +10,27 @@ const formattedPublishedDate = dateWithShortMonth(blogPost.data.publishedDate);
 <div class="header">
     {
         !isPost && (
-            <span>
+            <nav class="post-preview-header">
                 <a href={`/blog/${blogPost.id}`}>{blogPost.data.title}</a>
-                <p class="published-date">{formattedPublishedDate}</p>
-            </span>
+                <div class="post-date-reading-time">
+                    <p>{formattedPublishedDate}</p>
+                    <CircleSeparator />
+                    <ReadingTime blogPost={blogPost} />
+                </div>
+            </nav>
         )
     }
 
     {
         isPost && (
-            <span>
+            <div class="post-header">
                 <h1>{blogPost.data.title}</h1>
-                <p class="published-date">{formattedPublishedDate}</p>
-            </span>
+                <div class="post-date-reading-time">
+                    <p class="published-date">{formattedPublishedDate}</p>
+                    <CircleSeparator />
+                    <ReadingTime blogPost={blogPost} />
+                </div>
+            </div>
         )
     }
 </div>
@@ -29,12 +38,20 @@ const formattedPublishedDate = dateWithShortMonth(blogPost.data.publishedDate);
     .header {
         margin-bottom: 24px;
     }
-    a + .published-date {
+    .post-preview-header {
         font-size: 0.85rem;
     }
-    h1 + .published-date {
+
+    .post-header {
         font-size: 1.1rem;
     }
+
+    .post-date-reading-time {
+        display: flex;
+        column-gap: 8px;
+        align-items: baseline;
+    }
+
     .header a {
         font-size: 1.5rem;
     }

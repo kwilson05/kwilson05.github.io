@@ -6,12 +6,13 @@
         "dev": "astro dev",
         "start": "astro dev",
         "build": "astro build",
-        "build:install" : "npm install && npm run build",
+        "build:install": "npm install && npm run build",
         "preview": "astro preview",
         "astro": "astro"
     },
     "dependencies": {
-        "astro": "^5.2.3"
+        "astro": "^5.2.3",
+        "reading-time": "^2.0.0-1"
     },
     "engines": {
         "node": ">=18.17.0"

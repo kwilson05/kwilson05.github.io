@@ -1,0 +1,8 @@
+---
+import readingTime from 'reading-time';
+const { blogPost } = Astro.props;
+
+const estimatedReadingTime = readingTime(blogPost.body);
+---
+
+<span>{estimatedReadingTime.minutes} minute read</span>
