@@ -3,7 +3,6 @@ import type { GetStaticPaths } from 'astro';
 import { render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { getPublishedBlogEntries } from '@utils/blog';
-import { dateWithShortMonth } from '@utils/date';
 import BlogPostHeader from '@components/BlogPostHeader.astro';
 
 export const getStaticPaths = (async () => {
