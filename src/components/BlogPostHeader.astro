@@ -4,7 +4,7 @@ import ReadingTime from '@components/ReadingTime.astro';
 import CircleSeparator from '@components/CircleSeparator.astro';
 const { blogPost, isPost } = Astro.props;
 
-const formattedPublishedDate = dateWithShortMonth(blogPost.data.publishedDate);
+const formattedPublishedDate = dateWithShortMonth(blogPost.data.pubDate);
 ---
 
 <div class="header">

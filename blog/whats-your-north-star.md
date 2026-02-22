@@ -2,8 +2,8 @@
 id: 'whats-your-north-star'
 title: '⭐ What’s Your North Star???'
 draft: false
-publishedDate: 2025-04-11
-headline: "Since being laid off last December, a recurring theme has been popping up in chats with my friends: 'What's Your North Star?'"
+pubDate: 2025-04-11
+description: 'Since being laid off, a recurring theme has been popping up in chats with my friends.'
 ---
 
 Since being laid off last December, a recurring theme has been popping up in chats with my friends: 'What's Your North Star?' I always make yearly goals, but what are those goals driving me towards?<br /> <br />

@@ -11,6 +11,7 @@
         "astro": "astro"
     },
     "dependencies": {
+        "@astrojs/rss": "^4.0.15",
         "astro": "^5.2.3",
         "reading-time": "^2.0.0-1"
     },
