@@ -20,11 +20,11 @@ type BlogPostProp = {
     blogPost: CollectionEntry<'blog'>;
 };
 const { blogPost } = Astro.props as BlogPostProp;
-const headline = blogPost.data.headline;
+const description = blogPost.data.description;
 const { Content } = await render(blogPost);
 ---
 
-<BaseLayout title={blogPost.data.title} description={headline}>
+<BaseLayout title={blogPost.data.title} description={description}>
     <BlogPostHeader blogPost={blogPost} isPost={true} />
     <Content />
 </BaseLayout>
